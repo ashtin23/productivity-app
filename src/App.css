@@ -1,0 +1,34 @@
+.App {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+.Title {
+  margin: auto;
+  width: 50%;
+  border: 3px solid purple;
+  padding: 10px;
+  text-align: center;
+}
+
+.List {
+  margin: auto;
+  width: 50%;
+  border: 3px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+.Input {  
+  margin: auto;
+  width: 50%;
+  border: 3px solid blue;
+  padding: 10px;
+  text-align: center;
+}
+
+  
+
