@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-function Title() {
-  return (
-    <div className="Title">
-      <h1>Productivity App</h1>
-    </div>
-  );
-}
+// function Title() {
+//   return (
+//     <div className="Title">
+//       <h1>Productivity App</h1>
+//     </div>
+//   );
+// }
 
-export default Title;
+// export default Title;
