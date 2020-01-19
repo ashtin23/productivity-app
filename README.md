@@ -1,30 +1,72 @@
-## Planning
+# Productivity App
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Requirements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For development, you will only need Node.js installed on your environement.
+And please use the appropriate [Editorconfig](http://editorconfig.org/) plugin for your Editor (not mandatory).
 
-### Code Splitting
+### Node
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[Node](http://nodejs.org/) is really easy to install & now include [NPM](https://npmjs.org/).
+You should be able to run the following command after the installation procedure
+below.
 
-### Analyzing the Bundle Size
+    $ node --version
+    v0.10.24
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    $ npm --version
+    1.3.21
 
-### Making a Progressive Web App
+#### Node installation on OS X
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+You will need to use a Terminal. On OS X, you can find the default terminal in
+`/Applications/Utilities/Terminal.app`.
 
-### Advanced Configuration
+Please install [Homebrew](http://brew.sh/) if it's not already done with the following command.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
-### Deployment
+If everything when fine, you should run
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+    brew install node
 
-### `npm run build` fails to minify
+#### Node installation on Linux
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# productivity-app
+    sudo apt-get install python-software-properties
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
+
+#### Node installation on Windows
+
+Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it.
+
+---
+
+## Install
+
+    $ git clone git@github.com:ashtin23/productivity-app.git
+    $ cd productivity-app
+    $ npm install
+
+## Start & watch
+
+    $ npm start
+
+## Simple build for production
+
+    $ npm run build
+
+---
+
+## Languages & tools
+
+### HTML
+
+### JavaScript
+
+- [React](http://facebook.github.io/react) is used for UI.
+
+### CSS
+
