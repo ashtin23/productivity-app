@@ -1,5 +1,9 @@
 # Productivity App
 
+## About
+
+This is a basic to-do list application. The user is able to add tasks to their list, and subsequently remove completed tasks by clicking on them. Currently, it is a MVP. Eventually, the user will be able to access a calendar to click on a given day to see the tasks for that day. Rather than clicking on the task to delete it, they will be able to simply cross them out or check them off, so they can see all tasks for that given day, rather than uncompleted tasks, as it stands now. This means that I will need to store each task/day to a database. I also may consider adding other functions such as weather or news for the day, so the app may be considered a a complete productivity app, or a homepage that the user can utilize while at work or doing schoolwork, rather than a simple to-do list. 
+
 ## Requirements
 
 For development, you will only need Node.js installed on your environement.
