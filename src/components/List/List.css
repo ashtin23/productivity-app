@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.listMain {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.listMain .header input{
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #FFF;
+    width: 165px
+}
+
+.listMain .header button {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+
+.listMain .header button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+}
+
+.listMain .myList {
+    list-style: none;
+    padding-left: 0;
+    width: 250px;
+}
+
+.listMain .myList li {
+    color: #333;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* list-style: none; */
+    transition: background-color .2s ease-out;
+}
+
+.listMain .myList li:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+ul.myList {
+    padding: 0;
+}
+
+.Title {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding-top: 0%;
+    margin-top: 0em;
+}

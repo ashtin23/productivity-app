@@ -1,50 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ListItems from '../ListItems/ListItems';
+import Title from '../Title/Title';
+import "./List.css";
 
-class List extends React.Component {
+class List extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            list : [],
+            items : []
         };
+        
         this.onAddItem = this.onAddItem.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
     }
 
     onAddItem(e) {
         e.preventDefault();
-        if (this._inputElement.value !== '') {
-            var newItem = {
-                text: this._inputElement.value,
-                key: Date.now()
+        if (this._inputElement.value !== "") {
+          var newItem = {
+            text: this._inputElement.value,
+            key: Date.now()
+          };
+       
+          this.setState((prevState) => {
+            return { 
+              items: prevState.items.concat(newItem) 
             };
-
-            this.setState((prevState) => {
-                return {
-                    items: prevState.items.concat(newItem)
-                };
-            });
-
-            this._inputElement.value = '';
+          });
+         
+          this._inputElement.value = "";
         }
+         
         console.log(this.state.items);
-    }
+        
+      }
+
+      deleteItem(key) {
+          const filteredItems = this.state.items.filter(function (item) {
+              return (item.key !== key)
+          });
+
+          this.setState({
+              items: filteredItems
+          })
+      }
 
     render() {
-        // const listItems = this.state.list.map((item) =>
-        //   <li key={item}>{item}</li>  
-        // );
-
         return (
             <div className="listMain">
+                <Title />
                 <div className="header">
-                    <form className="Input" onSubmit={this.onAddItem}>
+                    <form onSubmit={this.onAddItem}>
                         <input 
                             ref={(a) => this._inputElement = a}
-                            placeholder={"enter text"}
-                        />
+                            placeholder="enter text">
+                        </input>
                         <button type ="submit">Add</button>
                     </form>
                 </div>
+                <ListItems tasks={this.state.items}
+                            delete={this.deleteItem} />
             </div>
             
         );
